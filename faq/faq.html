@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="1faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <div class="wrapper">  
+        <h1 class="title">Frequently Asked Questions</h1>
+        <div class="faq">
+     <button class="accordion">
+             How can i place order?
+             <i class="fa-solid fa-chevron-down"></i>
+            </button>
+      <div class="pannel">
+                <p>Just simply tap on login button; fill your email and password.
+                   after that a form will appear, fill asked details then pay through the payment gateway. 
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                Do i have to give you content for my notes?
+                <i class="fa-solid fa-chevron-down"></i>
+               </button>
+          <div class="pannel">
+                   <p>It is not compulsory to give us content.we will use the best content according to 
+                    your work. But if you want to give your content, we can use that too.
+                   </p>
+               </div>
+        </div>
+           <div class="faq">
+               <button class="accordion">
+                What kind of projects you make?
+                <i class="fa-solid fa-chevron-down"></i>
+               </button>
+           <div class="pannel">
+                   <p>As a freelancing platform, we can make any project that you want (or need).         
+                   </p>
+               </div>
+           </div>
+           <div class="faq">
+               <button class="accordion">
+                In how many days i can get my order delivered?
+                <i class="fa-solid fa-chevron-down"></i>
+               </button> 
+          <div class="pannel">
+                   <p>It mostly depend on the complexity of the project. Generally we deliver projects within 6-7 working days.                 
+                   </p>
+               </div>
+           </div>
+               <div class="faq">
+               <button class="accordion">
+                Is it necessary to pay before order gets placed?
+                <i class="fa-solid fa-chevron-down"></i>
+               </button>
+          <div class="pannel">
+                   <p>yes, It is necessary to pay before placing an order. 
+                   </p>
+               </div>
+               </div>
+               <div class="faq">
+               <button class="accordion">
+                what to do if my order is not same as i wanted?
+                <i class="fa-solid fa-chevron-down"></i>
+               </button>
+          <div class="pannel">
+                   <p>Attach the payment reciept with the order you recieved,
+                    and decribe how it is different from what you expected, then 
+                    send this to us, we will get back to you as soon as possible.
+                       
+                   </p>
+               </div>
+               <div class="inputBox">
+                
+                <span>For further Questions:</span>
+                <input type="text" required="required">
+            </div>
+            <a href="" class="btn">Send</a>
+    </div>
+    <script type="text/javascript">
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for(i=0; i<acc.length; i++){
+        acc[i].addEventListener("click",function
+        (){
+            this.classList.toggle("active");
+            this.parentElement.toggle("active");
+
+            var pannel = this.nextElementSibling;
+
+            if(pannel.style.display === "block"){
+                pannel.style.display = "none";
+            }
+            else{
+                pannel.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>
+</html>
