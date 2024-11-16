@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Order</title>
+    <link rel="stylesheet" href="order1.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="insert.php" method="post">
+        <div class="title">Order Now!!</div>
+        <div class="input-box underline">
+          <input type="text" placeholder="Enter Your Name" id="yourName" name="yourName" required />
+          <div class="underline"></div>
+        </div>
+
+          
+        <div class="input-box">
+          <input type="text" placeholder="Enter Your Phone Number" id="phoneNo" name="phoneNo" required />
+          <div class="underline"></div>
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter Current Address" id="address" name="address" required />
+          <div class="underline"></div>
+        </div>
+        <div class="dropdown">  
+          <label>   
+          Project related :  
+          </label>   
+            
+          <select class="drop2" id="choose" name="choose">  
+          <option value="a">Project</option>  
+          <option value="b">Notes</option>  
+          <option value="c">Sketchup</option>  
+          <option value="d">Website</option>  
+          <option value="x">Anything else</option>  
+          </select>  
+          </div> 
+
+          <div class="upload">
+           <label for="myfile">Upload File:</label>
+           <input type="file" id="myfile" name="myfile">
+           <input class="btn2" type="submit">
+          </div>
+          
+        <div class="input-box">
+          <input type="text" placeholder="Description (All we need to know...)" id="description" name="description" required />
+          <div class="underline"></div>
+        </div>
+        <div class="input-box button">
+          <a href="payment.html" class="btn3">Proceed to Pay</a>
+        </div>
+      </form>
+      
+    </div>
+  </body>
+</html>
